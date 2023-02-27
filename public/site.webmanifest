@@ -1,0 +1,60 @@
+{
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "icons": [
+        {
+            "sizes": "36x36",
+            "src": "android-chrome-36x36.png?v=0.1.2",
+            "type": "image/png"
+        },
+        {
+            "sizes": "48x48",
+            "src": "android-chrome-48x48.png?v=0.1.2",
+            "type": "image/png"
+        },
+        {
+            "sizes": "72x72",
+            "src": "android-chrome-72x72.png?v=0.1.2",
+            "type": "image/png"
+        },
+        {
+            "sizes": "96x96",
+            "src": "android-chrome-96x96.png?v=0.1.2",
+            "type": "image/png"
+        },
+        {
+            "sizes": "144x144",
+            "src": "android-chrome-144x144.png?v=0.1.2",
+            "type": "image/png"
+        },
+        {
+            "sizes": "192x192",
+            "src": "android-chrome-192x192.png?v=0.1.2",
+            "type": "image/png"
+        },
+        {
+            "sizes": "256x256",
+            "src": "android-chrome-256x256.png?v=0.1.2",
+            "type": "image/png"
+        },
+        {
+            "sizes": "384x384",
+            "src": "android-chrome-384x384.png?v=0.1.2",
+            "type": "image/png"
+        },
+        {
+            "sizes": "512x512",
+            "src": "android-chrome-512x512.png?v=0.1.2",
+            "type": "image/png"
+        }
+    ],
+    "id": "/",
+    "name": "Figo Pet Insurance",
+    "description": "A quick-starter template and guide to utilize on new projects.",
+    "scope": ".",
+    "short_name": "Figo Pet Insurance",
+    "start_url": ".",
+    "theme_color": "#ffffff",
+    "version": "0.1.2",
+    "orientation": "any"
+}

@@ -1,0 +1,220 @@
+{
+  "author": {
+    "email": "darcher@insurefigo.com",
+    "name": "Dylan Archer"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-typescript",
+      [
+        "@babel/preset-env",
+        {
+          "corejs": 3,
+          "useBuiltIns": "usage"
+        }
+      ],
+      "@babel/preset-react",
+      [
+        "react-app",
+        {
+          "typescript": true
+        }
+      ],
+      "react-app/jest"
+    ]
+  },
+  "description": "An event tracking utility library for google analytics.",
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "13.4.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-ga": "3.3.1",
+    "rewire": "6.0.0"
+  },
+  "devDependencies": {
+    "@axe-core/react": "4.6.0",
+    "@babel/core": "7.20.12",
+    "@babel/plugin-syntax-flow": "7.18.6",
+    "@babel/plugin-transform-react-jsx": "7.20.13",
+    "@testing-library/dom": "8.20.0",
+    "@testing-library/user-event": "14.4.3",
+    "@types/ramda": "0.28.22",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "@types/rewire": "2.5.28",
+    "@types/styled-components": "5.1.26",
+    "@typescript-eslint/eslint-plugin": "5.51.0",
+    "@typescript-eslint/parser": "5.51.0",
+    "core-js": "3.27.2",
+    "eslint": "8.33.0",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-babel": "5.3.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-unicorn": "45.0.2",
+    "prettier": "2.8.4",
+    "prop-types": "15.8.1",
+    "react-is": "18.2.0",
+    "react-scripts": "5.0.1",
+    "sonarlint": "1.1.0",
+    "styled-components": "5.3.6",
+    "typescript": "4.9.5",
+    "webpack": "5.75.0"
+  },
+  "engines": {
+    "node": ">= 16.15.0",
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.19"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2022": true,
+      "jest": true,
+      "node": true,
+      "serviceworker": true,
+      "worker": true
+    },
+    "extends": [
+      "airbnb-typescript/base",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      "plugin:prettier/recommended",
+      "plugin:unicorn/recommended",
+      "plugin:jsx-a11y/recommended",
+      "prettier",
+      "react-app",
+      "react-app/jest"
+    ],
+    "ignorePatterns": [
+      "*.json",
+      "*.lock",
+      "*.md",
+      "*.yml",
+      "*.config.js",
+      "*.config.dev.js",
+      ".*",
+      "build",
+      "configs",
+      "scripts",
+      "node_modules",
+      "public",
+      "src/**/*.(test|spec|config).*"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "project": "./tsconfig.json",
+      "sourceType": "module",
+      "tsconfigRootDir": "."
+    },
+    "plugins": [
+      "jsx-a11y",
+      "prettier",
+      "unicorn",
+      "@typescript-eslint"
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".json",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
+        }
+      },
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": ["analytics", "events", "library", "metrics", "react", "typescript"],
+  "sideEffects": ["*.css"],
+  "license": "UNLICENSED",
+  "lint-staged": {
+    "*": ["git add"],
+    "yarn.lock": ["git rm --cached"]
+  },
+  "files": [
+    "dist/**/*",
+    "template/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "node": "./dist/index.js",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./preview": {
+      "require": "./dist/config.js",
+      "import": "./dist/config.mjs",
+      "types": "./dist/config.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "build/index.js",
+  "module": "src/index.ts",
+  "name": "figo-events",
+  "prettier": {
+    "arrowParens": "avoid",
+    "endOfLine": "auto",
+    "parser": "babel-ts",
+    "printWidth": 96,
+    "proseWrap": "always",
+    "singleAttributePerLine": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "private": true,
+  "release": {
+    "branches": ["main"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darcher-figo/figo-events"
+  },
+  "scripts": {
+    "check": "node_modules/.bin/tsc --noEmit",
+    "build": "node scripts/build.cjs",
+    "lint": "node_modules/.bin/eslint src --ext .ts,.tsx --fix && node_modules/.bin/prettier src/**/*.{ts,tsx} --write",
+    "start": "node_modules/.bin/react-scripts start",
+    "test": "node_modules/.bin/react-scripts test . --coverage --collectCoverageFrom=src/**/*.{ts,tsx} --collectCoverageFrom=!src/**/*.{fixture,setup,d}.{ts,tsx} --collectCoverageFrom=!src/index.tsx"
+  },
+  "type": "module",
+  "typings": "src/@types/index.d.ts",
+  "unpkg": "dist/ga-figo-events.min.js",
+  "version": "0.1.2",
+  "workspaces": ["build/*"]
+}

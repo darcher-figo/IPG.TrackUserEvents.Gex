@@ -1,0 +1,55 @@
+{
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "rome.rome"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "rome.rome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "rome.rome"
+	},
+	"[less]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[sass]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[svg]": {
+		"editor.defaultFormatter": "jock.svg"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "rome.rome"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "rome.rome"
+	},
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.rome": true,
+		"source.organizeImports.rome": true
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": false,
+	"editor.formatOnType": false,
+	"editor.lineHeight": 1.618,
+	"git.autofetch": true,
+	"git.enableSmartCommit": true,
+	"git.rebaseWhenSync": true,
+	"rome.lspBin": "${workspaceFolder}/node_modules/.bin/rome",
+	"rome.requireConfiguration": true,
+	"rome_lsp.trace.server": "verbose",
+	"workbench.editor.highlightModifiedTabs": true,
+  "editor.indentSize": "tabSize",
+}

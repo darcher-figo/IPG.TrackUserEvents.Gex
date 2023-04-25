@@ -1,14 +1,13 @@
+import type { EventData, EventName, TokenId } from "./track-events.d";
+
 export function dispatchEvent(
-	event_name: Gtag.EventNames,
-	event_data: Partial<Gtag.EventParams>,
+	event_name: EventName,
+	event_data: EventData,
 ): void {
 	globalThis.gtag("event", event_name, event_data);
 }
 
-export function trackPageView(
-	page_href: URL,
-	gtm_token: string & keyof NodeJS.ProcessEnv,
-): void {
+export function trackPageView(page_href: URL, gtm_token: TokenId): void {
 	try {
 		const page_path = page_href;
 		const token = process.env[gtm_token];

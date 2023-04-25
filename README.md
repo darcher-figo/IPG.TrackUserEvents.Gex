@@ -18,6 +18,10 @@ Collection of callable Command Line Interface (CLI) scripts
 | CMD       | Description                                    |
 | :-------- | :--------------------------------------------- |
 | `nvm use` | loads the expected `node` version for library. |
+| `npm run build` | outputs library in `lib` directory |
+| `npm run lint` | uses `romejs` to lint `*.ts` files |
+| `npm run format` | uses `romejs` to format `*.ts` files |
+| `npm run test` | runs test suite written in `jest` |
 
 ---
 
@@ -68,19 +72,19 @@ Collection of callable Command Line Interface (CLI) scripts
 
 > node_modules/.bin/jest --verbose --coverage .
 
- PASS  src/track-events.test.ts<br />
-  runs trackPageView tracking method<br />
-    ✓ should emit a page viewed event (1 ms)<br />
-    ✓ should emit an error in console (1 ms)<br />
-  runs dispatchEvent tracking method<br />
-    ✓ should emit an action event<br />
+ - PASS  src/track-events.test.ts<br />
+   - runs trackPageView tracking method<br />
+     - ✓ should emit a page viewed event (1 ms)<br />
+     - ✓ should emit an error in console (1 ms)<br />
+   - runs dispatchEvent tracking method<br />
+     - ✓ should emit an action event<br />
 
-| File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s |
-| ------------------- | ------- | -------- | ------- | ------- | ----------------- |
-| src/track-events.ts | 100     | 100      | 100     | 100     | <small>--</small>
+| File                | Statements | Branch | Functions | Lines | 
+| ------------------- | ---------- | -------- | ------- | ------- | 
+| `src/track-events.ts` | `100%` | `100%` | `100%` | `100%` |
 
 | name | status | #
 | :--  | :--- | :--
-| Test Suites | <mark>100% passed</mark> | 1 of 1 passed
-| Tests | <mark>100% passed</mark> | 3 of 3 passing
-| Time Elapsed | `0.771 s` |
+| Test Suites | <mark><code>100%</code> ✓ passed</mark> | `1/1` passing
+| Tests | <mark><code>100%</code> ✓ passed</mark> | `3/3` passing
+| Time Elapsed | `seconds` | `0.771`

@@ -1,0 +1,10 @@
+{
+	"coverageReporters": ["lcov", "text"],
+	"moduleFileExtensions": ["js", "ts", "node"],
+	"testEnvironment": "node",
+	"testRegex": "^.+.test\\.ts?$",
+	"transform": {
+		"^.+\\.ts?$": "ts-jest"
+	},
+	"transformIgnorePatterns": ["<rootDir>/node_modules/"]
+}

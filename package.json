@@ -1,0 +1,50 @@
+{
+  "author": "Dylan Archer <darcher@insurefigo.com> (https://github.com/darcher-figo)",
+  "bugs": {
+    "url": "https://github.com/darcher-figo/track-events/issues"
+  },
+  "description": "Google analytics 4 & tag manager event tracking helper utility methods.",
+  "devDependencies": {
+    "@types/gtag.js": "0.0.12",
+    "@types/jest": "29.5.1",
+    "@types/node": "18.16.0",
+    "jest": "29.5.0",
+    "rome": "12.0.0",
+    "ts-jest": "29.1.0",
+    "typescript": "5.0.4"
+  },
+  "engines": {
+    "node": ">= 20.0.0",
+    "npm": ">= 9.6.4",
+    "yarn": "please-use-npm"
+  },
+  "files": [
+    "track-events.d.ts",
+    "track-events.ts"
+  ],
+  "homepage": "https://github.com/darcher-figo/track-events#README",
+  "keywords": [
+    "analytics",
+    "events",
+    "ga",
+    "ga4",
+    "google analytics",
+    "gtm",
+    "impressions",
+    "tracking"
+  ],
+  "license": "MIT",
+  "main": "track-events.ts",
+  "name": "track-events",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darcher-figo/track-events.git"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/tsc",
+    "lint": "node_modules/.bin/rome check --verbose --apply-unsafe .",
+    "format": "node_modules/.bin/rome format --verbose --write .",
+    "test": "node_modules/.bin/jest --verbose --coverage ."
+  },
+  "version": "0.1.0"
+}

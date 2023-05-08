@@ -25,7 +25,7 @@ Collection of callable Command Line Interface (CLI) scripts
 
 ---
 
-## Misc notes
+## Setup
 
 - We should be utilizing environment variables (.env), install using: `npm i -D dotenv`.
 
@@ -65,6 +65,24 @@ Collection of callable Command Line Interface (CLI) scripts
     ></iframe>
   </noscript>
   ```
+
+---
+
+## Implementation
+
+Implementation will change, more options will be included to call as component/children wrappers.
+
+Track `pageview` on view render.
+
+```javascript
+  trackPageView(data); // on page render
+```
+
+Track `event` on user interaction.
+
+```javascript
+  dispatchEvent(data); // on user events
+```
 
 ---
 
